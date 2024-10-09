@@ -1,0 +1,179 @@
+Css 4depends on
+1. Specificity :- means priority of selectors 
+Inline css > id > class > element
+2. !important 
+3. Order in which cssis declared , the last one have higher priority
+4. Inheritance means some css propertues will apply on all the elements insiade the selector like color but some not like border
+
+
+CSS is of 3 types:
+1. INLINE
+2.INTERNAL
+3.EXTERNAL
+1.INLINE CSS: An inline style may be used to apply a unique style for a single element.
+
+To use inline styles, add the style attribute to the relevant element. The style attribute can contain any CSS property.
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1 style="color:blue;text-align:center;">This is a heading</h1>
+<p style="color:red;">This is a paragraph.</p>
+
+</body>
+</html>
+
+
+2. INTERNAL: 
+An internal style sheet may be used if one single HTML page has a unique style.
+
+The internal style is defined inside the <style> element, inside the head section.
+
+Example
+Internal styles are defined within the <style> element, inside the <head> section of an HTML page:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  background-color: linen;
+}
+
+h1 {
+  color: maroon;
+  margin-left: 40px;
+}
+</style>
+</head>
+<body>
+
+<h1>This is a heading</h1>
+<p>This is a paragraph.</p>
+
+</body>
+</html>
+
+3.EXTERNAL CSS:
+With an external style sheet, you can change the look of an entire website by changing just one file!
+
+Each HTML page must include a reference to the external style sheet file inside the <link> element, inside the head section.
+
+Example
+External styles are defined within the <link> element, inside the <head> section of an HTML page:
+
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="mystyle.css">
+</head>
+<body>
+
+<h1>This is a heading</h1>
+<p>This is a paragraph.</p>
+
+</body>
+</html>
+
+
+***SELECTORS:
+CSS selectors are used to "find" (or select) the HTML elements you want to style.
+1. ELEMENT SELECTOR 
+2. CLASS SELECTOR 
+3. ID SELECTOR 
+4. GROUP SELECTOR
+
+1. element: 
+-> The element selector selects HTML elements based on the element name.
+
+2.ID selector
+
+->The id selector uses the id attribute of an HTML element to select a specific element.
+
+The id of an element is unique within a page, so the id selector is used to select one unique element!
+
+To select an element with a specific id, write a hash (#) character, followed by the id of the element.
+
+Example
+The CSS rule below will be applied to the HTML element with id="para1": 
+
+#para1 {
+  text-align: center;
+  color: red;
+}
+
+3. CLASS selecctor:
+->The class selector selects HTML elements with a specific class attribute.
+
+To select elements with a specific class, write a period (.) character, followed by the class name.
+
+Example
+In this example all HTML elements with class="center" will be red and center-aligned: 
+
+.center {
+  text-align: center;
+  color: red;
+}
+
+4.The CSS Universal Selector:
+The universal selector (*) selects all HTML elements on the page.
+
+Example
+The CSS rule below will affect every HTML element on the page: 
+
+* {
+  text-align: center;
+  color: blue;
+}
+
+5. The CSS Grouping Selector:
+The grouping selector selects all the HTML elements with the same style definitions.
+
+Look at the following CSS code (the h1, h2, and p elements have the same style definitions):
+
+h1 {
+  text-align: center;
+  color: red;
+}
+
+h2 {
+  text-align: center;
+  color: red;
+}
+
+p {
+  text-align: center;
+  color: red;
+}
+
+*****colors
+they can be added by different types
+1. names
+2.rgb
+3.hexadecimal
+4. hsl(hue,saturation,lighting)
+
+
+*****
+span tag: it is an inline container used to used to group and style text or elements within a document without inherently 
+altering their appearance.
+--> in span tag the height and width property doesnot affect because it is an inline element 
+-->They only take up as much width as necessary. Examples include <span>, <a>, <strong>, etc.
+
+*Block elements: Take up the full width available and start on a new line. Examples include <div>, <p>, <h1>, etc.
+
+Applying width and height to <span>:
+To make width and height properties work on a <span>, you need to change its display behavior.
+ You can use display: inline-block or display: block.
+
+ ********************************************************************************************
+
+ ---->BOX MODEL
+
+ the website will be in the rectangular BOX
+
+ ->Content - The content of the box, where text and images appear
+->Padding - Clears an area around the content. The padding is transparent
+->Border - A border that goes around the padding and content
+->Margin - Clears an area outside the border. The margin is transparent

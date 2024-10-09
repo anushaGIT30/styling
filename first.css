@@ -1,0 +1,58 @@
+/*CSS SELECTORS*/
+/*element selector*/
+h1 {
+    color: brown;
+    text-align: center;
+}
+
+h2 {
+    color: blueviolet;
+    text-decoration: dashed;
+}
+
+/*ID selector and font styles*/
+#para1 {
+    color: green;
+    font-style: italic;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 500;
+    line-height: 30px;
+
+
+}
+
+#para2 {
+    color: darkmagenta;
+}
+
+/*Class selector*/
+.class {
+    color: darkred;
+
+}
+
+/*GROUP selector*/
+ul,
+article {
+    color: blue;
+    width: 500px;
+}
+
+p.para1 {
+    background-color: burlywood;
+}
+
+#para4 {
+    background-color: aquamarine;
+    color: brown;
+}
+
+#para5 {
+    background-color: rgb(47, 203, 128);
+}
+
+.class1 {
+    background-color: hsl(311, 100%, 50%);
+
+}
