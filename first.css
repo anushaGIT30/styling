@@ -3,11 +3,13 @@
 h1 {
     color: brown;
     text-align: center;
+    padding: 20px 50px 40px 30px
 }
 
 h2 {
     color: blueviolet;
     text-decoration: dashed;
+    padding: 20px 50px 40px 30px;
 }
 
 /*ID selector and font styles*/
@@ -29,6 +31,7 @@ h2 {
 /*Class selector*/
 .class {
     color: darkred;
+    padding: 20px 50px 40px 30px;
 
 }
 

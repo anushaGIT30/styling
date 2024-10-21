@@ -1,0 +1,62 @@
+FLEXBOX: IT IS A 1-D layout METHOD 
+->full form flexible box
+->parent container is called flex container
+->the item which is present in the flex container is called flex item 
+-> if we want to create any element as a flex we use display: flex
+->by default the flex direction will be row 
+->mainly it is used for responsive design of webpage for example if we increase or decrease the size the actual content 
+will not be disturbed like if we minimize or maximize the screen
+
+->flex: wrap
+In CSS, flex-wrap is a property used in a flex container to control how flex items are wrapped when they do not fit within the container's width or height. By default, flex items are laid out in a single line (no wrapping), but you can modify this behavior with flex-wrap.
+
+Here are the values it accepts:
+
+nowrap (default): All flex items are laid out in 
+a single line, and they will not wrap even if they overflow the container.
+-- in simple words it make to come in the next line if the width or height is not available in the web page
+
+***
+The flex-flow property in CSS is a shorthand for setting both the flex-direction and flex-wrap properties in a flex container. These two properties together define how the flex container's children (flex items) are laid out, including the direction of the items and
+ whether they wrap onto multiple lines.
+
+ ***
+ justify content:
+ it place according to the main access
+ if the flex direction is row then main axis is horizontal
+ if the flex direction is column then main axis is vertical
+
+ ***
+ align items: it will align items irrespective to the axis 
+ align content: removes the space when we use wrap
+ ***
+ flex-items
+ 1.flex-basis- it is used to define dimension
+ 2.flex-grow
+ 3.flex-shrink
+ 4.align -self
+
+ summary:
+ flex container:
+ display
+ flex direction
+ flex wrap
+ flex flow -> align items
+ justify content -> align content
+
+ flex items:
+ order
+ flex grow
+ flex shrink
+ flex basis
+ align self
+
+
+if flex direction is row the justify content will be horizontal
+and align items will be column
+
+if flex direction is column the justify content will be vertical 
+and align items will be row
+
+
+

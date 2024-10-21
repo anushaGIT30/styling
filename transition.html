@@ -1,0 +1,40 @@
+<!--the process of moving one state of styling to another state of styling is called transition-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            height: 400px;
+            width: 400px;
+            background-color: aquamarine;
+            border: 2px solid black;
+            /*
+            transition-property: all;
+            transition-duration: 5s;
+            transition-timing-function: linear;
+
+            **shorthand notation*/
+            transition: all 2s ease-in-out;
+            /*multiple transitions*/
+            transition: width 2s, height 5s;
+        }
+
+        .box:hover {
+            width: 1600px;
+            height: 1600px;
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+
+    </div>
+</body>
+
+</html>

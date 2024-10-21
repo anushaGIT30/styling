@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            background-color: orangered;
+            height: 850px;
+            border: 2px solid black;
+            overflow: scroll;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box {
+            /*creating custom variable*/
+            --primary-color: white;
+            --custom-width: 350px;
+            background-color: yellow;
+            width: var(--custom-width);
+            height: 650px;
+            border: 5px solid sienna;
+            margin: 5px;
+            padding: 5px;
+
+            /* x-offset y-offset color*/
+            /* box-shadow: 10px 20px purple;
+            box-shadow: -10px 20px purple;
+            /*box shadow using blur radius*/
+            /* box-shadow: 20px 30px 40px green;
+            /*box spread radius*/
+            /* box-shadow: 30px 40px 40px 20px red;
+            /* if we get the shadow inside the box*/
+            /* box-shadow: inset 20px 30px rgb(34, 213, 43);
+            /* multiple shadow
+            box-shadow: 10px 20px red, 15px 20px seagreen;*/
+            /*creating shadow for the text*/
+            #head {
+
+                /*  text-shadow: 2px 3px 3px green;*/
+                text-shadow: palevioletred 12px 13px 11px;
+                text-shadow: whitesmoke 12px 13px;
+                text-shadow: 12px 13px;
+                text-shadow: red 14px 15px 16px, blue 11px 20px 30px, gray 22px 23px 25px;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <img src="ssnap.png" alt="snap" width="200px" height="200px">
+            <h2 id="head">SNAPCHAT</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore voluptates similique commodi amet
+                aliquid autem sint eum dolorum rerum hic, nobis, totam deleniti, tenetur quod facilis modi laboriosam
+                magnam blanditiis atque sapiente inventore! Sed, facilis. Natus, velit, blanditiis esse tempore eius
+                aspernatur enim asperiores, ut vitae commodi quas dignissimos fugit veniam nobis ipsam voluptates
+                provident numquam adipisci doloremque incidunt modi odio iusto. Assumenda velit quisquam ullam sit eum
+                doloremque nostrum iure odio, modi ipsum, aut, aperiam itaque harum dolorem consectetur?</p>
+        </div>
+    </div>
+</body>
+
+</html>

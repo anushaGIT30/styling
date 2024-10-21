@@ -1,0 +1,66 @@
+POSITION:
+it tells how an element has to be placed in the document
+1. static: 
+
+This is the default positioning for elements.
+Elements are positioned according to the normal document flow, meaning they appear in the order they are written in the HTML.
+It does not respond to top, right, bottom, or left properties.
+
+2. relative:
+
+An element is positioned relative to its normal position. It stays in the document flow, but you can offset it using top, right, bottom, or left.
+This shifts the element from its original position without affecting the layout of other elements.
+->there is a gap of that element
+3. absolute:
+
+The element is positioned relative to the nearest positioned ancestor (an element that is not static). If there is no such ancestor, it will be positioned relative to the initial containing block (the browser window).
+It is removed from the document flow, so it doesn't affect the layout of other elements.
+->the spaace will be removed
+
+4.fixed:
+
+An element with position: fixed is positioned relative to the browser window. It remains fixed in place when the page is scrolled.
+It is also removed from the document flow, similar to absolute
+
+5. sticky: 
+The element will stick in place when you scroll past it, but will remain relative until a certain threshold is reached.
+You need to set one or more of top, right, bottom, or left for it to work.
+
+DIFFERENCE BETWEEN FIXED AND STICKY is
+ -> the sticky behaviour is seen with in the parent only but the fixed behaviour is seen in the entire window or a website for example : 
+ if we are applying the submit button will act as fixed.
+
+
+ CSS SIZE UNIT:
+
+1. percentage (%) - if the parent width is 100 this will take 50%
+2. viewport width(vw)
+3.viewport height(vh)
+4.pixels(px)=1/96 inch 
+Digital Pixel (Physical Pixel):
+
+->These are the tiny dots that make up your screen.
+They are part of the screen's hardware and the smallest visible parts that create images and text.
+More digital pixels on a screen = sharper image.
+
+2. Logical Pixel (CSS Pixel):
+->This is how a program (like a website) measures things.
+It’s like a design unit that helps developers make things look the same across different devices.
+One logical pixel can be made of several digital pixels on high-resolution screens to make things clearer.
+Simple Example:
+Imagine you draw a box 100 pixels wide on a website.
+On a regular screen, it will use 100 physical pixels.
+On a high-resolution screen, it might use 200 physical pixels to make the box look clear, but it’s still considered 100 pixels wide in the code.
+This is why things look sharp and consistent, even on different devices like phones or computers.
+
+5. em 
+6. rem 
+
+Relative units (like em, rem, %, vw, vh) depend on other elements, the viewport, or font sizes. They adjust dynamically and are great for responsive design.
+Absolute units (like px, cm, in) are fixed sizes and do not change based on the screen or container size. They’re useful when you need precise control over measurements.
+
+
+NEXT LECTURE******************************
+
+->>>>FLOAT : it is used to achieve the text beside the photo 
+->>>>
